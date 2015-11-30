@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Travel Site</title>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header row">
+            <div class="col-md-2">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="home.html">
+               <img src="images/TravelTechLogo50.jpg">
+              </a> 
+            </div> 
+          </div>
+          <!--links-->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav"> 
+              <li><a href="about.html"><span class="navlink">about travelTight</span></a></li>
+            </ul>
+            <!--dropdown-->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="navlink">Dropdown</span>
+                  <span class="caret navlink"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Action</a></li>
+                  
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <!--search bar-->
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Quick Search">
+                </div>
+                <button type="submit" class="btn btn-default btn-info">Enter</button>
+              </form>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="col-md-3" style="text-align:left">  
+    <h5><Strong>Search Criteria</Strong></h5>
+    <div> 
+    <div class="panel panel-default" style="text-align:center">         
+        <!--div class="panel-body"></div -->       
+        <div>            
+            <h5><Strong>Stars</Strong></h5>  
+             <a style="text-align:center">
+
+                <button id="lonestarbtnID" type="button" class="btn btn-default"><img id="lonestarpicID" class="img-responsive" src="images/lonestar.jpg" width="28px" height="28px"></button>
+
+                <button id="2starbtnID" type="button" class="btn btn-default"><img id="2starpicID" class="img-responsive" src="images/2stars.jpg" width="28px" height="28px"></button>
+
+                <button id="3starbtnID" type="button" class="btn btn-default"><img id="3starpicID" class="img-responsive" src="images/3stars.jpg" width="28px" height="28px"></button>
+
+                <button id="4starbtnID" type="button" class="btn btn-default"><img id="4starpicID" class="img-responsive" src="images/4stars.jpg" width="28px" height="28px"></button>
+
+                <button id="5starbtnID" type="button" class="btn btn-default"><img id="5starpicID" class="img-responsive" src="images/5stars.jpg" width="28px" height="28px"></button> 
+
+              </a> 
+               
+        </div> 
+      </div> <!-- closes panel-success -->
+    </div> <!-- close container -->
+  
+
+  <div class="panel panel-default" style="text-align:center"> 
+    <div>
+          <h5><Strong>Ratings</Strong></h5>
+          
+          <a style="text-align:center">
+              <button id="belowavg1" type="button" class="btn btn-default"><img id="b_lo_avg_pic" class="img-responsive" src="images/bloavg.jpg" width="28px" height="28px"></button>
+              
+              <button id="satisfies1" type="button" class="btn btn-default"><img id="satisfies_pic" class="img-responsive" src="images/satisfies.jpg" width="28px" height="28px"></button>
+              
+              <button id="good1" type="button" class="btn btn-default"><img id="b_lo_avg_pic" class="img-responsive" src="images/good.jpg" width="28px" height="28px"></button>
+              
+              <button id="verygood1" type="button" class="btn btn-default"><img id="b_lo_avg_pic" class="img-responsive" src="images/verygood.jpg" width="28px" height="28px"></button>
+              
+              <button id="excel1" type="button" class="btn btn-default"><img id="b_lo_avg_pic" class="img-responsive" src="images/excellent.jpg" width="28px" height="28px"></button> 
+          </a>           
+      </div> 
+    </div> <!--closes class panel-default -->
+
+   
+    <div class="panel panel-default" style="text-align:center"> 
+    <div>
+          <h5><Strong>Options</Strong></h5>
+          
+          <a style="text-align:center">
+              <button id="option1" type="button" class="btn btn-default"><img id="surfoptionID" class="img-responsive" src="images/beach2option.jpg" width="28px" height="28px"></button>
+              
+              <button id="option2" type="button" class="btn btn-default"><img id="petsoptionID" class="img-responsive" src="images/petsoption.jpg" width="28px" height="28px"></button>
+              
+              <button id="option3" type="button" class="btn btn-default"><img id="wifioptionID" class="img-responsive" src="images/wifioption.jpg" width="28px" height="28px"></button>
+              
+              <button id="option4" type="button" class="btn btn-default"><img id="pooloptionpicID" class="img-responsive" src="images/bars3option.jpg" width="28px" height="28px"></button>
+              
+              <button id="option5" type="button" class="btn btn-default"><img id="b_lo_avg_pic" class="img-responsive" src="images/coffeeoption.jpg" width="28px" height="28px"></button> 
+          </a>           
+      </div> 
+    </div> <!--closes class panel-default -->
+
+    <div class="panel panel-default"> 
+    <!--This panel is for "search" function -->
+      <div>     
+        <div id="tfheader">
+          <form id="tfnewsearch" method="get" action="http://www.google.com">
+          <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value="Enter City Name">
+          <input type="submit" value=">" class="tfbutton2">
+          </form>
+          <div class="tfclear"></div>
+        </div>
+      </div> 
+    </div> <!--closes class panel-default --> 
+
+ </div> <!--End of col-md-3 -->
+<!--/div> End of container -->
+
+<!-- // 2nd portion of grid starts here-->
+<div class="col-md-6">
+ 
+<div class="table-responsive">     
+        <table id="hotelinfo" class="table" style="text-align:left" width="800px" border="1px"> 
+              <th>Hotel Info</th>            
+              <tr>                 
+                  <td>
+                    <div>
+                      <h5><Strong>Top Features</Strong></h5>        
+                        <a id="topfeat1">Feature 1</a> 
+                        <a id="topfeat2">Feature 2</a>              
+                        <a id="topfeat3">Feature 3</a>
+                        <a id="topfeat4">Feature 4</a>
+                        <a id="topfeat1">Feature 5</a> 
+                        <a id="topfeat2">Feature 6</a>              
+                        <a id="topfeat3">Feature 7</a>
+                        <a id="topfeat4">Feature 8</a>
+                    </div> 
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>                
+                    <div>
+                        <h5>
+                          <p id="hoteldescrhead"><strong>Description</strong></p> 
+                        </h5>                        
+                          <h5>Location. The Hotel Marlowe is located in downtown Cambridge, Mass., across the Charles River from Boston. Harvard Square, Boston Common, Faneuil Hall and the Paul Revere House are within three miles of this property. Hotel Features. The Hotel Marlowe features the Bambara restaurant that serves New England influenced American brasserie style cuisine. The centrally located bar overlooks downtown Boston and the Charles River, and serves a global selection of fine wines. Complimentary breakfast is provided</h5>               
+                    </div> 
+                  </td>
+              </tr>
+
+
+              <tr>
+                  <td>                
+                    <div>
+                        <h5>
+                          <p id="howpay"><strong>Payment</strong></p> 
+                        </h5>                        
+                        <table> 
+                          <h6>                        
+                            <td>American Express</td> 
+                            <td>&nbsp &nbsp Master Card</td> 
+                            <td>&nbsp &nbsp Visa</td> 
+                            <td>&nbsp &nbsp Diners Club</td> 
+                            <td>&nbsp &nbsp JCB Int'l</td> 
+                          </h6>
+                        </table> 
+                    </div> 
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>                
+                    <div>
+                        <h5>
+                          <h5 id="suitable4"><strong>Suitable For</strong></h5> 
+                        <table>
+                          <td><h6>Business People</h6></td>
+                          <td><h6>&nbsp &nbsp Honeymooners</h6></td>
+                        </table>             
+                    </div> 
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>                
+                    <div>
+                        <h5>
+                          <p id="howcontact"><strong>Contact</strong></p> 
+                        </h5>                         
+                          <ul>
+                            <li>
+                            <h6>25 Edwin H Land Boulevard, Cambridge, MA, 02141, USA |  Show on map</h6>
+                            <li>
+                            <h6>Telephone: +1(617)8688000 | Fax: +1(617)8688001 | Official Homepage
+                            </h6>
+                            </li>
+                          </ul>               
+                    </div> 
+                  </td>
+              </tr> 
+
+              <th>Room Info</th>            
+              <tr>                 
+                  <td>
+                  <div class="panel panel-default">                 
+                    <div>
+                        <h5>
+                          <a id="roomdescrhead"></a> 
+                        </h5>                        
+                          <h5>You can find information on the various room types offered by this establishment below. Please check the selected deal to see what features are included in the price.</h5>               
+                    </div> 
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>                
+                    <div>
+                        <h5>
+                          <p id="descrhead"><strong>Deluxe Room</strong></p> 
+                        </h5>                        
+                          <table>
+                            <div>
+                              <td>Highlighted Features / Amenities (Deal Dependent)</td>
+                            </div>
+
+                            <div>
+                              <td>
+                                <ul>
+                                  <li>
+                                  Beds Available:  Kind Size or Double Bed
+                                  </li>
+                                  <li>
+                                  Room Size: 8m x 4m
+                                  </li>
+                                </ul>
+
+                                <ul>
+                                  <li>
+                                  Room Safe
+                                  </li>
+                                  <li>
+                                  Desk
+                                  </li>
+                                  <li>
+                                  Bathroom with tub
+                                  </li>
+                                </ul>
+                                </td>
+                              <td>
+                            </div>
+                          </table>               
+                    </div> 
+                  </td>
+                </tr>
+                  <td>
+
+                    <div>
+                        <h5>
+                          <p id="Suite info"><strong>Suite</strong></p> 
+                        </h5>                        
+                          <table>
+                            <div>
+                              <td>Highlighted Features / Amenities (Deal Dependent)</td>
+                            </div>
+
+                            <div>
+                              <td>
+                                <ul>
+                                  <li>
+                                  Beds Available:  Kind Size or Double Bed
+                                  </li>
+                                  <li>
+                                  Room Size: 11.5m x 5.5m
+                                  </li>
+                                </ul>
+
+                                <ul>
+                                  <li>
+                                  Room Safe
+                                  </li>
+                                  <li>
+                                  Desk
+                                  </li>
+                                  <li>
+                                  Bathroom with tub
+                                  </li>
+                                  <li>
+                                  Flat Screen TV
+                                  </li>
+                                </ul>
+                                </td>
+                              <td>
+                            </div>
+                          </table>               
+                    </div>
+                  </td>              
+        </table>
+      </div>
+    </div><!-- c;ose panel--> 
+   </div>
+ </div> <!-- class="container"--> 
+
+
+<div class="col-md-3"> 
+<div class="panel panel-default" height="300px" border="0"> 
+
+<p> We serve Boston, New York, San Francisco, and Chicago </p>
+<div class="container">
+<!--Carousel-->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" width="80px">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" class="img-responsive" >
+      <img src="images/Boston2.jpg" height="180px" width="250px" alt="Boston">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item" class="img-responsive" >
+      <img src="images/NY1.jpg" height="180px" width="250px" alt="New York">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item" class="img-responsive" >
+      <img src="images/Seattle1.jpg" height="180px" width="250px" alt="Seattle">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item" class="img-responsive" >
+      <img src="images/SF1.jpg" height="180px" width="250px" alt="San Francisco">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</div>
+</div>
+  
+<div class="row">
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
