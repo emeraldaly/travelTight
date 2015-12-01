@@ -15,26 +15,30 @@ Use a mask or datepicker plugin to select dates.
 
 Elements to code:
 Landing Page:
-  Nav Bar [ ]
-  Carousel [ ]
+  Nav Bar [x ]
+  Carousel [x ]
   Search Functionality
     search by city [ ]
     search by date [ ]
   Brand
-    establish company [ ]
-    develop niche [ ]  
+    establish company [x ]
+    develop niche [x ]  
 
 Search Results
   Random pricing result by city [ ]
   Hotels include:   
-    Price [ ]
+    Price [x ]
     Reviews [ ]
     Amentities
 
 Specific Hotel Modal
-  Modal Pop-out [ ]
+  Modal Pop-out [x ]
   Further Info about hotel
     Price [ ]
     Reviews [ ]
     Amenities [ ]
     Location on Google Maps [ ]
+
+    Things to Troubleshoot
+    Remove Gray over modal [ ]
+    Finish jquery for prepending hotels [ ]
