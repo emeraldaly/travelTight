@@ -12,12 +12,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"  crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="main">
-    <h2>Hotel Information</h2> 
+<div class="col-md-12">
+     <h3>Hotel Information</h3>
         <section class="hotels">
             <div class="listing col-md-9">
                 <h3>Plaza Hotel</h3>
-                <p>New York City</p>
+                <p>New York City, NY</p>
             </div>
             <div class="price col-md-3"></div>
             <!--modal button -->
@@ -35,7 +35,38 @@
                         <h4>Plaza Hotel</h4>
                     </div>
                     <div class="modal-body">
-                        classic new york city hotel.
+                        classic new york city hotel. $400 dollars per night
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default">Don't show listing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="hotels">
+            <div class="listing col-md-9">
+                <h3>Fairmont San Francisco</h3>
+                <p>San Francisco, CA</p>
+            </div>
+            <div class="price col-md-3"></div>
+            <!--modal button -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+            More Info
+          </button>
+                <!-- modal -->
+                <div class= "modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">X</span>
+                        </button>
+                        <h4>Fairmont hotel</h4>
+                    </div>
+                    <div class="modal-body">
+                        classic San Francisco hotel. $420 dollars per night
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
