@@ -1,0 +1,88 @@
+ 
+.navbar-custom {
+    background-color:#229922;
+    color:#ffffff;
+    border-radius:1px;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+}
+
+    color:#eeeeee;
+.navbar-form {
+  padding-top:10px;
+  color:#d0bbbb;
+  background-color:#3d7b8b;
+  height: 120px;
+}
+
+ #tfheader{
+    background-color:#c3dfef;
+  }
+  #tfnewsearch{
+    float:right;
+    padding:20px;
+  }
+  .tftextinput2{
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#666;
+    border:1px solid #0076a3; border-right:0px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+  }
+  .tfbutton2 {
+    margin: 0;
+    padding: 5px 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 1px #0076a3; border-right:0px;
+    background: #0095cd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+  }
+  .tfbutton2:hover {
+    text-decoration: none;
+    background: #007ead;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+    background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+  }
+  /* Fixes submit button height problem in Firefox */
+  .tfbutton2::-moz-focus-inner {
+    border: 0;
+  }
+  .tfclear{
+    clear:both;
+  }
+
+  /* .btn-danger { border-color: #[insert color here]; background-color: #[insert color here]}; */
+  .btn-danger:hover { border-color: red; background-color: light red}; 
+
+  /* .btn-warning { border-color: #[insert color here]; background-color: #[insert color here]}; */
+  .btn-warning:hover { border-color: orange; background-color: yellow}; 
+
+  .btn-info { border-color: #[light green]; background-color: #[light green]};
+  .btn-info:hover { border-color: #[insert color here]; background-color: #[insert color here]}; 
+
+  /*.btn-success { border-color: #[dark green]; background-color: #[insert color here]}; */
+  .btn-success:hover { border-color: #[green]; background-color: #[light green]}; 
+
+  .btn-primary { border-color: #[dark green]; background-color: #[dark green]};
+  .btn-primary:hover { border-color: #[dark green]; background-color: #[light green]}; 
