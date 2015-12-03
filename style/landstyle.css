@@ -8,3 +8,8 @@ body {
   section {
     background-color: turquoise;
   }
+
+  .modal-backdrop.in
+  {
+    z-index: 1;
+  }
