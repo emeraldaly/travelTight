@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  alert("hi");
+ // alert("hi");
   $('.attButton').attr('disabled', 'disabled');
   $(".resetSearch").hide();
   $("#submitSearch").keypress(function() {  
-    var startSearch, searchButton, acceptNY, acceptSF, ny, sanFrancisco, endEmpty, startEmpty, stateEmpty
+    var startSearch, searchButton, acceptNY, acceptSF, ny, sanFrancisco, endEmpty, startEmpty, stateEmpty;
     // dictionary
     acceptNY = {
         "ny" : true,
