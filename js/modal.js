@@ -6,13 +6,13 @@ $(document).ready(function() {
     var startSearch, searchButton, acceptNY, acceptSF, ny, sanFrancisco, endEmpty, startEmpty, stateEmpty;
     // dictionary
     acceptNY = {
-        "ny" : true,
-        "NY" : true,
+        ny : true,
+        NY : true,
         "New York" : true
     };
     
     acceptSF = {
-        "SF" : true,
+        SF : true,
         "San Francisco" : true,
         "san francisco" : true
     };
