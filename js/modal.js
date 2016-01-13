@@ -1,22 +1,20 @@
 $(document).ready(function() {
-  alert("hi");
-  $('.attButton').attr('disabled', 'disabled');
+ // alert("hi");
+ 'use strict'; $('.attButton').attr('disabled', 'disabled');
   $(".resetSearch").hide();
-  $("#submitSearch").keypress(function() {  
-    var startSearch, searchButton, acceptNY, acceptSF, ny, sanFrancisco, endEmpty, startEmpty, stateEmpty
+ 'use strict'; $("#submitSearch").keypress(function() {  
+    var startSearch, searchButton, acceptNY, acceptSF, ny, sanFrancisco, endEmpty, startEmpty, stateEmpty;
     // dictionary
     acceptNY = {
-        "ny" : true,
-        "NY" : true,
+        ny : true,
+        NY : true,
         "New York" : true
     };
-    
     acceptSF = {
-        "SF" : true,
+        SF : true,
         "San Francisco" : true,
         "san francisco" : true
     };
-
     ny = "ny";
     sanFrancisco = "sanFrancisco";
     submitSearch = $("#submitSearch").val();
@@ -27,7 +25,6 @@ $(document).ready(function() {
        $(".notValid").show();
       return;     
       }
-
     if (startEmpty.length === 0) {     
         alert("please enter start");
          $(".notValid").show();
@@ -63,5 +60,4 @@ $(document).ready(function() {
         return;
         }
   });
-});
 });
